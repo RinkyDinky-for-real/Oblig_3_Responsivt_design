@@ -16,14 +16,14 @@ header{
 article{
     display: flex;
     grid-area: content;
-    align-items: center;
+    object-fit: cover;
     text-align: center;
     background-color: red;
     flex-direction: row;
 }
 aside{
     grid-area: ads;
-    align-items: center;
+    
     text-align: center;
 }
 nav{
@@ -38,7 +38,7 @@ header, aside, article, nav, footer {
     padding:1rem
 }
 #tilbud, #buttons{
-    background-color: blue;
+    background-color: rgb(255, 0, 0);
 }
 #buttons{
     display: flex;
@@ -50,6 +50,8 @@ header, aside, article, nav, footer {
 #buttons a{
     align-items: center;
     padding-inline: 1rem;
+    text-decoration: none;
+    color: black;
 }
 @media screen and (min-width: 600px){
     #main{
