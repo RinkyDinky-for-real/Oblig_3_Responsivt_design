@@ -41,7 +41,10 @@ header, aside, article, nav, footer {
     background-color: blue;
 }
 #buttons{
+    display: flex;
+    text-align: center;
     flex-direction: row;
+    width: 100%;
 }
 @media screen and (min-width: 600px){
     #main{
@@ -50,6 +53,9 @@ header, aside, article, nav, footer {
             "topbar     topbar      topbar"
             "ads    content     sidebar"
             "footer     footer  footer";
+    }
+    #buttons{
+        flex-direction: column;
     }
     nav{display: flex;};
     aside{
