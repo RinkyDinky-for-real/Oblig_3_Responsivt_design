@@ -1,49 +1,50 @@
-main{
+#main{
     display: grid;
     grid-template-areas: 
-        "topbar"     
+        "topbar"
+        "ads"     
         "content"      
         "footer";
 }
-
+#logo{
+    text-decoration: none;
+}
 header{ 
     grid-area:  topbar;
     background-color: #BBBBBB;
 }
 article{
     grid-area: content;
-    display: flex;
-    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: red;
+}
+aside{
+    grid-area: ads;
+    align-items: center;
+    text-align: center;
 }
 nav{
-    grid-area: sidebar;
+    display: none;
+}
+aside img{
+    width:100%;
 }
 footer{grid-area: footer;}
+
 header, aside, content, article, nav, footer {
     padding:1rem
 }
-.tilbud, .buttons{
-    width: 100%;
-}
-@media screen and (max-width: 600px){
-    nav{display: none;};
+#tilbud, #buttons{
+    background-color: blue;
 }
 @media screen and (min-width: 600px){
-    main{
+    #main{
         display: grid;
         grid-template-areas: 
             "topbar     topbar      topbar"
-            "content    content     sidebar"
+            "ads    content     sidebar"
             "footer     footer  footer";
     }
-    nav{display: all;};
-    article{
-        flex-direction: row;
-    }
-    .tilbud{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
+    nav{display: flex;};
 }
