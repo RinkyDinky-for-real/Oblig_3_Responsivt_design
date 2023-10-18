@@ -43,8 +43,13 @@ header, aside, article, nav, footer {
 #buttons{
     display: flex;
     text-align: center;
+    align-items: center;
     flex-direction: row;
     width: 100%;
+}
+#buttons a{
+    align-items: center;
+    padding-inline: 1rem;
 }
 @media screen and (min-width: 600px){
     #main{
