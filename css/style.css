@@ -1,16 +1,49 @@
 main{
     display: grid;
     grid-template-areas: 
-        "topbar     topbar      topbar"
-        "ads    content     sidebar"
-        "footer     footer  footer";
+        "topbar"     
+        "content"      
+        "footer";
 }
 
-header{ grid-area:  topbar;  }
-aside{  grid-area: ads ;}
-article{grid-area: content;}
-nav{grid-area: sidebar;}
+header{ 
+    grid-area:  topbar;
+    background-color: #BBBBBB;
+}
+article{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    grid-area: sidebar;
+}
 footer{grid-area: footer;}
-header, aside, article, nav, footer {
+header, aside, content, article, nav, footer {
     padding:1rem
+}
+.tilbud, .buttons{
+    width: 100%;
+}
+@media screen and (max-width: 600px){
+    nav{display: none;};
+}
+@media screen and (min-width: 600px){
+    main{
+        display: grid;
+        grid-template-areas: 
+            "topbar     topbar      topbar"
+            "content    content     sidebar"
+            "footer     footer  footer";
+    }
+    nav{display: all;};
+    article{
+        flex-direction: row;
+    }
+    .tilbud{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
 }
