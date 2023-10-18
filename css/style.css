@@ -10,14 +10,16 @@
     text-decoration: none;
 }
 header{ 
-    grid-area:  topbar;
+    grid-area: topbar;
     background-color: #BBBBBB;
 }
 article{
+    display: flex;
     grid-area: content;
     align-items: center;
     text-align: center;
     background-color: red;
+    flex-direction: row;
 }
 aside{
     grid-area: ads;
@@ -32,11 +34,14 @@ aside img{
 }
 footer{grid-area: footer;}
 
-header, aside, content, article, nav, footer {
+header, aside, article, nav, footer {
     padding:1rem
 }
 #tilbud, #buttons{
     background-color: blue;
+}
+#buttons{
+    flex-direction: row;
 }
 @media screen and (min-width: 600px){
     #main{
@@ -47,4 +52,13 @@ header, aside, content, article, nav, footer {
             "footer     footer  footer";
     }
     nav{display: flex;};
+    aside{
+        width: 40%;
+    }
+    article{
+        width: 20%;
+    }
+    nav{
+        width: 40%;
+    }
 }
