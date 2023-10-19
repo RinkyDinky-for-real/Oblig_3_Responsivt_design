@@ -13,46 +13,66 @@ header{
     grid-area: topbar;
     background-color: #BBBBBB;
 }
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-inline: 1rem;
+}
 article{
     display: flex;
     grid-area: content;
-    object-fit: cover;
+    object-fit: center;
     text-align: center;
-    background-color: red;
     flex-direction: row;
+    justify-content: center;
 }
 aside{
     grid-area: ads;
-    
     text-align: center;
 }
 nav{
-    display: none;
+    grid-area: sidebar;
+    text-align: center;
 }
-aside img{
-    width:100%;
+aside img, nav img{
+    width:90%;
+    padding-bottom: 1rem;
+}
+aside h2, nav h2{
+    padding-top: 1rem;
 }
 footer{grid-area: footer;}
 
 header, aside, article, nav, footer {
     padding:1rem
 }
-#tilbud, #buttons{
-    background-color: rgb(255, 0, 0);
+#tilbud, #galleri{
+    background-color: #CECECECE;
 }
 #buttons{
+    padding-top: 1rem;
     display: flex;
-    text-align: center;
-    align-items: center;
     flex-direction: row;
     width: 100%;
+    justify-content: center;
+    row-gap: 1rem;
 }
 #buttons a{
-    align-items: center;
-    padding-inline: 1rem;
     text-decoration: none;
     color: black;
+    width:30%;
+    min-width: 90px;
+    background-color: #E0E0E0;
+    text-align: center;
+    vertical-align: middle;
+
 }
+@media screen and (max-width: 600px){
+    nav{display: none;}}/*jeg vet ikke hvorfor dette er nødvendig å gjøre*/
 @media screen and (min-width: 600px){
     #main{
         display: grid;
@@ -64,14 +84,10 @@ header, aside, article, nav, footer {
     #buttons{
         flex-direction: column;
     }
-    nav{display: flex;};
-    aside{
-        width: 40%;
+    #buttons a{
+        width: 100%;
     }
-    article{
-        width: 20%;
-    }
-    nav{
-        width: 40%;
+    nav img, aside img {
+        min-width: 272px;
     }
 }
