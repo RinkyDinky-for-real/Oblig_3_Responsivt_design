@@ -58,7 +58,7 @@ footer{grid-area: footer;}
 header, aside, article, nav, footer {
     padding:1rem
 }
-#tilbud, #galleri{
+#sale, #gallery{
     background-color: #CECECECE;
 }
 #buttons{
