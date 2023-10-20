@@ -1,4 +1,4 @@
-#main{
+#grid-container{
     display: grid;
     grid-template-areas: 
         "topbar"
@@ -17,45 +17,44 @@ header{
     grid-area: topbar;
     background-color: #BBBBBB;
 }
-header ul{
+nav ul{
     display: flex;
     flex-wrap: wrap;
     row-gap: 1rem;
     justify-content: space-evenly;
     list-style-type: none;
     padding: 20px;
-    vertical-align: middle;
 }
-header li{
+nav li{
     padding-inline: 3%;
     vertical-align: middle;
 }
-article{
+#article{
     display: flex;
     grid-area: content;
-    object-fit: center;
     text-align: center;
     flex-direction: row;
     justify-content: center;
 }
-aside{
+#aside{
     grid-area: ads;
     text-align: center;
 }
-nav{
+#rightside{
     grid-area: sidebar;
     text-align: center;
+    display: none;
 }
-aside img, nav img{
+#aside img, #rightside img{
     width:90%;
     padding-bottom: 1rem;
 }
-aside h2, nav h2{
+#aside h2, #rightside h2{
     padding-top: 1rem;
 }
 footer{grid-area: footer;}
 
-header, aside, article, nav, footer {
+header, #aside, #article, #rightside, footer {
     padding:1rem
 }
 #sale, #gallery{
@@ -79,8 +78,6 @@ header, aside, article, nav, footer {
     vertical-align: middle;
 
 }
-@media screen and (max-width: 600px){
-    nav{display: none;}}/*jeg vet ikke hvorfor dette er nødvendig å gjøre*/
 @media screen and (min-width: 600px){
     #main{
         display: grid;
@@ -89,13 +86,16 @@ header, aside, article, nav, footer {
             "ads    content     sidebar"
             "footer     footer  footer";
     }
+    #rightside{
+        display: block;
+    }
     #buttons{
         flex-direction: column;
     }
     #buttons a{
         width: 100%;
     }
-    nav img, aside img {
+    #rightside img, #aside img {
         min-width: 272px;
     }
 }
