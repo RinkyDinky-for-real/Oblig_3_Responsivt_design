@@ -6,6 +6,10 @@
         "content"      
         "footer";
 }
+body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
 #logo{
     text-decoration: none;
 }
@@ -15,12 +19,14 @@ header{
 }
 header ul{
     display: flex;
-    flex-direction: row;
-    justify-content: left;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    justify-content: space-evenly;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-inline: 1rem;
+    padding: 20px;
+}
+header li{
+    padding-inline: 5%;
 }
 article{
     display: flex;
