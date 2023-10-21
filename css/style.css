@@ -1,4 +1,4 @@
-#grid-container{
+#main{/*selve grid-en*/
     display: grid;
     grid-template-areas: 
         "topbar"
@@ -6,7 +6,7 @@
         "content"      
         "footer";
 }
-h1{
+h1{/*slik at logoen passer inn i nav*/
     margin: 0;
     padding: 0;
 }
@@ -45,28 +45,34 @@ nav li{
     text-align: center;
     display: none;
 }
-#aside img, #rightside img{
+#aside img, #rightside img, #shoe img{
     width:90%;
     padding-bottom: 1rem;
+    border-radius: 30px;
 }
 #aside h2, #rightside h2{
     padding-top: 1rem;
 }
 footer{grid-area: footer;}
 
-header, #aside, #article, #rightside, footer {
+header, #aside, #article, #rightside, #product, footer {
     padding:1rem
+}
+#shoe, #info{
+    padding: 1rem;
 }
 #sale, #gallery{
     background-color: #CECECECE;
+    border-radius: 40px;
 }
 #buttons{
     padding-top: 1rem;
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
     row-gap: 1rem;
+    border-radius: 5%;
 }
 #buttons a{
     text-decoration: none;
@@ -76,7 +82,102 @@ header, #aside, #article, #rightside, footer {
     background-color: #E0E0E0;
     text-align: center;
     vertical-align: middle;
-
+    border-radius: 30px;
+}
+#product{
+    display: flex;
+    flex-direction: column;
+    background-color: #CECECE;
+    border-radius: 30px;
+}
+#product2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#info section{
+    padding: 0.5rem;
+}
+#back{
+    justify-content: left;
+    text-align: left;
+    text-decoration: none;
+}
+#back a{
+    background-color: #8B8B8B;
+    padding: 5px;
+    border-radius: 50%;
+}
+#shoe{
+    display: flex;
+    justify-content: center;
+}
+#info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+}
+#description{
+    width: 50%;
+}
+#rest{
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+#stars{
+    min-width: 122px;
+}
+.checked{
+    color: orange;
+}
+#storage{
+    list-style: none;
+    padding-top: 0rem;
+}
+#storage li::before{
+    content: "\2022";
+    color: #14FF00;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -2em;
+}
+#checkout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E0E0E0;
+    border-radius: 30px;
+}
+#checkout h2{
+    padding: 0rem;
+}
+#buy{
+    background-color: #16AF1C;
+    border: 2px #16AF1C;
+    border-radius: 30px;
+    transition-duration: 0.2s;
+}
+#buy:hover{
+    background-color: #1cd823;
+}
+#buy ul{
+    display: flex;
+    align-items: center;
+    row-gap: 1rem;
+    list-style-type: none;
+    padding: 0px;
+    justify-content: center;
+}
+#buy li{
+    padding-inline: 3%;
+    vertical-align: middle;
 }
 @media screen and (min-width: 600px){
     #main{
@@ -95,7 +196,15 @@ header, #aside, #article, #rightside, footer {
     #buttons a{
         width: 100%;
     }
-    #rightside img, #aside img {
+    #rightside img, #aside img, #shoe img{
         min-width: 272px;
+        object-fit: cover;
     }
+    #shoe, #info{
+        width: 50%;
+    }
+    #product2{
+        flex-direction: row-reverse;
+    }
+
 }

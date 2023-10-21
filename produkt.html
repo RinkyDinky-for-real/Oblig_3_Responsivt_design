@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/5df494abc8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css\style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
     <div id="main">
@@ -14,7 +14,7 @@
             <nav>
                 <ul>
                     <li><i id="hamb" class="fa-solid fa-bars fa-2xl"></i></li>
-                    <li><a href="#" id="logo"><h1>Logo</h1></a></li>
+                    <li><a href="index.html" id="logo"><h1>Logo</h1></a></li>
                     <li><i id="user" class="fa-solid fa-user fa-2xl"></i></li>
                     <li><i id="cart" class="fa-solid fa-cart-shopping fa-2xl"></i></li>
                     <li><input type="text" placeholder="søk her....."></li>
@@ -24,14 +24,51 @@
         <section id="article">
             <section id="product">
                 <section id="back">
-                    <i class="fa-solid fa-arrow-left"></i>
+                    <a href="produktliste.html"><i class="fa-solid fa-arrow-left"></i></a>
                 </section>
-                <section id="product img">
-                    <img src="img/dalle-sko.png" alt="skoen som selges">
+                <section id="product2">
+                    <section id="shoe">
+                        <img src="img/dalle-sko.png" alt="skoen som selges">
+                    </section>
+                    <section id="info">
+                        <section id="description">
+                            <h2>Produkt</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate mi sit amet mauris commodo. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse.</p>
+                        </section>
+                        <section id="rest">
+                            <section id="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </section>
+                            <section id="cascade">
+                                <form name="size" id="size" action="/action_page.php">
+                                    Størrelse: <select name="sizes" id="sizes">
+                                        <option value="42" selected="selected">Velg Størrelse</option>
+                                    </select>
+                                </form>
+                            </section>
+                            <ul id="storage">
+                                <li>På lager</li>
+                            </ul>
+                            <section id="checkout">
+                                <h2 id="price">
+                                    399,-
+                                </h2>
+                                <button onclick="alert('oops!')" id="buy">
+                                    <ul>
+                                        <li><i id="cart" class="fa-solid fa-cart-shopping fa-2xl"></i></li>
+                                        <li><h2>Kjøp</h2></li>
+                                    </ul>
+                                </button>
+                            </section>
+                        </section>
+                    </section>
                 </section>
-
             </section>
         </section>
-    </main>
+    </div>
 </body>
 </html>
