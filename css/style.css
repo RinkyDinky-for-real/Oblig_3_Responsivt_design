@@ -130,7 +130,24 @@ header, #aside, #article, #rightside, #product, footer {
     text-align: center;
     justify-content: center;
 }
+#bigreview{
+    display: none;
+    justify-content: center;
+    text-align: center;
+    padding: 0rem;
+}
+#review{
+    justify-content: center;
+    text-align: center;
+    background-color: #8B8B8B;
+}
 #stars{
+    min-width: 122px;
+}
+#review{
+    min-width: 122px;
+}
+#stars2{
     min-width: 122px;
 }
 .checked{
@@ -205,6 +222,9 @@ header, #aside, #article, #rightside, #product, footer {
     }
     #product2{
         flex-direction: row-reverse;
+    }
+    #bigreview{
+        display: block;
     }
 
 }
