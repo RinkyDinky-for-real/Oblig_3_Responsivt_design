@@ -10,6 +10,10 @@ h1{/*slik at logoen passer inn i nav*/
     margin: 0;
     padding: 0;
 }
+h2{
+    margin: 0;
+    padding: 0;
+}
 #logo{
     text-decoration: none;
 }
@@ -52,6 +56,7 @@ nav li{
 }
 #aside h2, #rightside h2{
     padding-top: 1rem;
+    padding: 1rem;
 }
 footer{grid-area: footer;}
 
@@ -66,7 +71,6 @@ header, #aside, #article, #rightside, #product, footer {
     border-radius: 40px;
 }
 #buttons{
-    padding-top: 1rem;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -83,6 +87,9 @@ header, #aside, #article, #rightside, #product, footer {
     text-align: center;
     vertical-align: middle;
     border-radius: 30px;
+}
+#buttons h2{
+    padding: 1.2rem;
 }
 #product{
     display: flex;
