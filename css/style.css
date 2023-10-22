@@ -209,8 +209,9 @@ header, #aside, #article, #rightside, #sale, #gallery, footer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
+    gap: 0.5rem;
     row-gap: 1rem;
 }
 #product_list img{
@@ -218,8 +219,8 @@ header, #aside, #article, #rightside, #sale, #gallery, footer {
     border-radius: 30px;
 }
 #product{
-    width: 40%;
-    min-width: 300px;
+    min-width: 160px;
+    max-width: 300px;
     justify-content: center;
     text-align: center;
     background-color: #E0E0E0;
@@ -259,5 +260,8 @@ header, #aside, #article, #rightside, #sale, #gallery, footer {
     }
     #review{
         display: block;
+    }
+    #product_list{
+        justify-content: flex-start;
     }
 }
