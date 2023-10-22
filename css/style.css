@@ -60,7 +60,7 @@ nav li{
 }
 footer{grid-area: footer;}
 
-header, #aside, #article, #rightside, #product, footer {
+header, #aside, #article, #rightside, #sale, footer {
     padding:1rem
 }
 #shoe, #info{
@@ -91,13 +91,13 @@ header, #aside, #article, #rightside, #product, footer {
 #buttons h2{
     padding: 1.2rem;
 }
-#product{
+#sale{
     display: flex;
     flex-direction: column;
     background-color: #CECECE;
     border-radius: 30px;
 }
-#product2{
+#sale2{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -135,25 +135,27 @@ header, #aside, #article, #rightside, #product, footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
+    vertical-align: top;
 }
 #bigreview{
-    display: none;
     justify-content: center;
     text-align: center;
     padding: 0rem;
+    background-color: #E0E0E0;
+    border-radius: 30px;
 }
 #review{
+    display: none;
     justify-content: center;
     text-align: center;
     background-color: #8B8B8B;
+    border-radius: 30px;
+    min-width: 122px;
 }
 #stars{
     min-width: 122px;
 }
-#review{
-    min-width: 122px;
-}
+
 #stars2{
     min-width: 122px;
 }
@@ -227,11 +229,10 @@ header, #aside, #article, #rightside, #product, footer {
     #shoe, #info{
         width: 50%;
     }
-    #product2{
+    #sale2{
         flex-direction: row-reverse;
     }
-    #bigreview{
+    #review{
         display: block;
     }
-
 }
