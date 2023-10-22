@@ -60,7 +60,7 @@ nav li{
 }
 footer{grid-area: footer;}
 
-header, #aside, #article, #rightside, #sale, footer {
+header, #aside, #article, #rightside, #sale, #gallery, footer {
     padding:1rem
 }
 #shoe, #info{
@@ -80,6 +80,9 @@ header, #aside, #article, #rightside, #sale, footer {
 }
 #buttons a{
     text-decoration: none;
+}
+#buttons h2{
+    padding: 1.2rem;
     color: black;
     width:30%;
     min-width: 90px;
@@ -87,9 +90,6 @@ header, #aside, #article, #rightside, #sale, footer {
     text-align: center;
     vertical-align: middle;
     border-radius: 30px;
-}
-#buttons h2{
-    padding: 1.2rem;
 }
 #sale{
     display: flex;
@@ -204,6 +204,31 @@ header, #aside, #article, #rightside, #sale, footer {
 #buy li{
     padding-inline: 3%;
     vertical-align: middle;
+}
+#product_list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    row-gap: 1rem;
+}
+#product_list img{
+    width: 100%;
+    border-radius: 30px;
+}
+#product{
+    width: 40%;
+    min-width: 300px;
+    justify-content: center;
+    text-align: center;
+    background-color: #E0E0E0;
+    border-radius: 30px;
+    padding: 1rem;
+}
+#product h2{
+    width: min-content;
+    text-align: center;
 }
 @media screen and (min-width: 600px){
     #main{
