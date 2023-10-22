@@ -219,7 +219,7 @@ header, #aside, #article, #rightside, #sale, #gallery, footer {
     border-radius: 30px;
 }
 #product{
-    min-width: 160px;
+    min-width: 150px;
     max-width: 300px;
     justify-content: center;
     text-align: center;
