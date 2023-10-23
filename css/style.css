@@ -244,10 +244,14 @@ header, #aside, #article, #rightside, #sale, #gallery, footer {
     }
     #buttons{
         flex-direction: column;
-        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
     }
     #buttons a{
-        width: fit-content;
+        width: max-content;
+    }
+    #buttons h2{
+        padding: 2rem;
     }
     #rightside img, #aside img, #shoe img{
         min-width: 272px;
