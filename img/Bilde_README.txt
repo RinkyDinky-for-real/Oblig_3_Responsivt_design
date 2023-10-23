@@ -1,0 +1,1 @@
+alle bildene var laget av Dall-E 2, som kan finnes på nettsiden deres, https://labs.openai.com/
